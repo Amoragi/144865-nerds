@@ -386,3 +386,11 @@ aside {
   width: 760px;
   border: 1px solid green
 }
+
+.sortimg {
+  border: 2px solid pink;
+}
+
+.column {
+  display: inline-block;
+}
