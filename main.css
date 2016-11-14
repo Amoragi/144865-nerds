@@ -280,18 +280,19 @@ border: 10px solid black;*/
 
 .metka {
   position: absolute;
-  right:820px;
-bottom:120px;
+  right:850px;
+  bottom:115px;
 }
 
 .adress {
+
   padding-top: 30px;
   text-align: center;
   position: absolute;
   background-color: white;
   width: 420px;
   height: 278px;
-  left:450px;
+  left:230px;
 bottom:60px;
 
 }
@@ -358,3 +359,30 @@ footer{
 #vk{background:url('img/sprite.png') -63px 10px;}
 
 Красный - *#fb565a/
+
+/*ВТОРАЯ СТРАНИЦА*/
+
+.text h1 {
+width: 1000px;
+text-align: center;
+margin-bottom: 115px;
+margin-top: 85px;
+}
+
+.main {
+  margin: 0 auto;
+  width: 1160px;
+  border: solid 1px yellow
+}
+aside {
+  display: inline-block;
+  width: 260px;
+  border: 1px solid red;
+}
+
+.sort {
+  vertical-align: top;
+  display: inline-block;
+  width: 760px;
+  border: 1px solid green
+}
