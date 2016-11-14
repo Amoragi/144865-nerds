@@ -388,9 +388,12 @@ aside {
 }
 
 .sortimg {
-  border: 2px solid pink;
+  width: 760px;
+  display: inline-block;
+  border: 1px solid pink;
 }
 
-.column {
+.goods {
   display: inline-block;
+  padding-right: 10px;
 }
