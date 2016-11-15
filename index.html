@@ -10,55 +10,62 @@
 </head>
 
 <body>
-  <section class="header">
-    <header>
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="img/nerds-logo.png" alt="logoNerds" width="160" height="65">
+  <!--  <section class="header">-->
+  <header>
+
+    <div class="container">
+
+      <div class="logo">
+        <a href="index.html" class="nerdslogo">
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#"> Клиенты</a>
+          </li>
+          <li>
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#" class="contact">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="userblock">
+        <a href="#">Корзина</a>
+      </div>
+
+
+      <div class="features">
+        <div class="text">
+          <h1>Долго,дорого,<br>скурпулезно.
+          </h1>
+          <p>Математические выверенный дизайн<br>для вашего сайта или мобильного приложения
+          </p>
+          <a href="#" class="button">Узнать больше
           </a>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#"> Клиенты</a>
-            </li>
-            <li>
-              <a href="catalog.html">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="userblock">
-          <a href="#">Корзина</a>
+
+        <div class="slider">
+          <img src="img/slider-1.jpg" alt="Nerds" width="760" height="412">
         </div>
-        <section class="clearfix">
-          <div class="features">
-            <div class="text">
-              <h1>Долго, дорого,скурпулезно.</h1>
-              <p>Математические выверенный дизайн для вашего сайта или мобильного приложения</p>
-              <a href="#" class="button">Узнать больше</a>
-            </div>
-            <div class="slider">
-              <img src="img/slider-1.jpg" alt="Nerds" width="760" height="431">
-            </div>
-            <!--  <div class="slider">
+        <!--  <div class="slider">
               <img src="#" alt="Nerds" width="760" height="431">
             </div>
             <div class="slider">
               <img src="#" alt="Nerds" width="760" height="431">
             </div>
           -->
-          </div>
-        </section>
       </div>
-    </header>
-  </section>
+
+  </header>
+
 
   <!--Второй блок-->
 
@@ -81,7 +88,7 @@
       <a href="#" class="bookingg">Заказать</a>
     </div>
 
-    <div class="services-item">
+    <div class="services-itemyellow">
       <img src="img/illustration-3.jpg" width="300" height="146" alt="illustration-3">
       <h2>презентации</h2>
       <p>Вы даже не подозреваете насколько вы изумительны!</p>
@@ -96,25 +103,29 @@
   <!--Третий блок-->
   <article class="description">
     <div class="descriptionText">
-      <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+      <h6>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h6>
       <p class="rule">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
       <h4>Выполняем заказы на разработку:</h4>
+
       <ul>
-        <li class="descriptionLi">
-          <!--<div class="reddash"></div>-->
-          Веб-сайтов любой сложности
+        <li class="descriptionli">
+          <!--  <svg>
+<rect width="25" height="2" fill="red"/>
+          </svg> -->
+          <span class="dash"> — </span> Веб-сайтов любой сложности
         </li>
-        <li class="descriptionLi">
+        <li class="descriptionli">
           <!--<div class="reddash"></div>-->
-          Мобильных приложений для iOS и Android
+          <span class="dash"> — </span> Мобильных приложений для iOS и Android
         </li>
-        <li class="descriptionLi">
+        <li class="descriptionli">
           <!--<div class="reddash"></div>-->
-          Слайдшоу и видео для корпоративных презентаций
+          <span class="dash"> — </span> Слайдшоу и видео для корпоративных презентаций
         </li>
       </ul>
-
     </div>
+
+
     <div class="percent">
 
       <img src="img/nerds-illustration.jpg" width="360" height="208" alt="nerds">
@@ -124,14 +135,22 @@
 
 
 
-      <div class="point">Уровень самоотдачи</div>
-      <span class="percents">146<sup>%</sup></span>
+      <div class="point">
 
-      <div class="point">Соблюдение сроков</div>
-      <span class="percents">100<sup>%</sup></span>
+        <span class="percents">146<sup>%</sup></span>
+        <p>Уровень<br>самоотдачи</p>
+      </div>
 
-      <div class="point">Минимальная предоплата</div>
-      <span class="percents">50<sup>%</sup></span>
+      <div class="point">
+
+        <span class="percents">100<sup>%</sup></span>
+        <p>Соблюдение<br>сроков</p>
+      </div>
+
+      <div class="point1">
+        <span class="percents">50<sup>%</sup></span>
+        <p>Минимальная<br>предоплата</p>
+      </div>
     </div>
   </article>
 
@@ -155,17 +174,13 @@
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=UCDWSRUbI_RDN9AOwa_okSsTCaxNqebd&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
     </script>
 
-
-    <!--<img src="img/map.jpg" alt="map" width="1160" height="415">
-        <!--Непонятно как быть с высотой и шириной в макете и в фотошопе?-->
-
     <img src="img/map-marker.png" alt="map" width="367" height="190" class="metka">
 
     <div class="adress">
       <h2>nёrds design studio</h2>
-      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+      <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д.19/8</p>
       <p>тел. +7 (812) 275-75-75</p>
-      <a href="#" class="bookingR">Напишите нам</a>
+      <a href="#" class="bookingr">Напишите нам</a>
     </div>
 
   </section>
@@ -190,11 +205,6 @@
     </div>
 
   </footer>
-</body>
-
-</html>
->
-</footer>
 </body>
 
 </html>

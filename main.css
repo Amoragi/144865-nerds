@@ -2,30 +2,59 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto, arial, helvetica, sans-serif;
+  font-size: 16px;
+  /*background-image:url(img/nerds-catalog.jpg);
+background-position: center bottom;  Положение фона
+background-repeat: no-repeat;  */
+}
+
+
+header {
+  background-color: #eeeeee;
+  height: 542px;
 
   }
 
-.header {
-  background-color: #eeeeee;
-}
 .container {
   position: relative;
   width: 1160px;
   margin: 0 auto;
-  padding-top: 10px;
+  }
+.logo {
+  width: 160px;
+  height: 115px;
+  position: absolute;
+  background-image: url(img/nerds-logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 50px;
+  }
+
+.nerdslogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+nav {
+  display: inline-block;
+  width: 520px;
+  margin-left: 300px;
+  padding-top: 80px;
 
 }
-.logo {
-  float: left;
-}
-nav {
-  width: 500px;
-  margin: 0 auto;
-}
 li {
-  width: 100px;
+  margin: 0 auto;
   display: inline-block;
+  margin-right: 50px;
+
 }
+
+
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -39,14 +68,12 @@ a {
    top: 25px;
    text-transform: uppercase;
    font-weight: bold;
-   padding: 10px 10px 10px 50px;
-/*Почему не нужна ссылка на корзине, мы же ее должны по идее кликать?
-  */
+   padding: 70px 10px 10px 50px;
 }
 
 .userblock::before {
   position: absolute;
-  top: -2px;
+  top: 59px;
   left: 5px;
   content: "";
   width: 30px;
@@ -56,45 +83,49 @@ a {
   background-position: top left;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+
+
+.button {
+  display: inline-block;
+  background-color: #fb565a;
+  border-radius: 5px;
+  width: 240px;
+  height: 35px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 16px;
+
 }
 .features {
   width: 1160px;
-  padding-top:20px;
   margin: 0 auto;
+
+
 }
-.button {
-  background-color: #fb565a;
-  border-radius: 5px;
-  padding: 20px 50px;
-  color: white;
-  font-weight: bolder;
-  text-transform: uppercase;
+
+.text {
+  vertical-align: top;
+  width: 440px;
+  display: inline-block;
+
 }
+
 h1 {
   font-weight: bold;
   font-size: 45px;
 }
 p {
-  font-size: 16px;
+
   margin-bottom: 40px;
+}
 
-}
-.text {
-  width: 400px;
-  float: left;
-}
 .slider {
-  float: right;
-width: 720px;
+  display: inline-block;
+width: 700px;
 }
 
-img {
-  display:block;
-}
+
 
 
 /*Второй блок*/
@@ -106,40 +137,59 @@ img {
     margin: 0 auto;
     padding-bottom: 80px;
     border-bottom: 2px solid lightgray;
-    padding-top: 70px;
+    padding-top: 80px;
     /*background-color: pink;*/
     }
 
 .services-item {
   width: 300px;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 100px;
+  margin-bottom: 25px;
+}
+.services-itemyellow {
+  width: 300px;
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 25px;
 }
 
 h2 {
   text-transform: uppercase;
+  margin-bottom: 27px;
 }
 
 .bookingr {
   background-color: #fb565a;
-  padding: 11px 38px;
+  width: 160px;
+  height: 35px;
+  display: inline-block;
   color: white;
   border-radius: 5px;
-
+  text-align: center;
+  padding-top: 15px;
 }
 
 .bookingg {
+  width: 160px;
+  height: 35px;
+  display: inline-block;
   background-color: #00ca74;
-  padding: 11px 38px;
   color: white;
   border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .bookingy {
+  width: 160px;
+  height: 35px;
   background-color: #efc84a;
-  padding: 11px 38px;
+  display: inline-block;
   color: white;
   border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
 
 }
 
@@ -152,38 +202,44 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-
-
 }
-.descriptionLi {
-  width: inherit;
-  display: block;
-  font-size: 16px;
 
 
-}
-h3 {
+.descriptionli {
+  display:block;
+  line-height: 2.1;
+
+  }
+h6 {
   font-size: 45px;
-  /*background-color: blue;*/
-  margin: 0px 0px 35px 0px;
-}
+/*  background-color: blue;*/
+  margin: 100px 0px 10px 0px;
 
+  vertical-align: top;
+  }
+.dash {
+
+  width: 100px;
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
 
 .descriptionText {
   width: 660px;
   display: inline-block;
-  padding-top: 50px;
-  padding-right: 116px;
+padding-right: 116px;
 }
 
 ul {
   padding: 0;
-
 }
+
 .rule {
 /*background-color: blue;*/
 margin: 0px 0px 45px 0px;
-line-height: 24px;
+line-height: 1.5;
+
 }
 .percent {
   vertical-align: top;
@@ -206,28 +262,60 @@ margin-top: 20px;
 h4 {
   text-transform: uppercase;
   /*background-color: blue;*/
-  margin: 0px 0px 35px 0px;
+  margin: 0px 0px 33px 15px;
 
 
 }
 
+.point {
+display: inline-block;
+/*background-color: red;*/
+margin-right: 20px;
+
+
+}
+
+.point1 {
+  vertical-align: top;
+display: inline-block;
+/*background-color: red;*/
+margin-right: 0;
+
+}
+
+
+
 .percents{
+
   /*background-color: pink;*/
   font-size: 45px;
   font-weight: bold;
   top: -0.2em;
-  }
 
-sup {
-top: -0.2em;
   }
 
 
-.point {
-  display: inline-block;
-  /*background-color: red;*/
-  margin-right:15px;
+
+.point p {
+
+  padding: 0;
+  margin-bottom: 10px;
+
 }
+sup {
+top: -0.5em;
+font-size: 25px;
+  }
+
+
+.percent h4 {
+  /*background-color: red;*/
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+
 
 /*.reddash {
   background-color: #fb565a;
@@ -250,7 +338,7 @@ opacity: 0.2;
   border-top: 2px solid black;
   border-bottom:2px solid black;
   margin-bottom: 100px;
-  margin-top: 80px;
+  margin-top: 75px;
 /*background-color: #fb565a;*/
 }
 
@@ -259,13 +347,13 @@ opacity: 0.2;
     width: 280px;
       }
 
-.graydash {
+/*.graydash {
 margin-bottom: 60px;
 display: inline-block;
 height: 52px;
 width: 2px;
 background-color: black;
-}
+}*/
 
 /*Пятый блок*/
 
@@ -306,6 +394,7 @@ footer{
 .footersocial{
   display: inline-block;
   width: 300px;
+  vertical-align: top;
   /*background-color: red;*/
 }
 .vk {
@@ -350,11 +439,9 @@ footer{
   margin-left: 120px;
   font-weight: bold;
 }
-.footertext p {
-  font-size: 36px;
-  margin-bottom: 10px;
 
-}
+
+
 /*#vk{height:28px;width:28px;}
 #vk{background:url('img/sprite.png') -63px 10px;}
 
@@ -362,12 +449,12 @@ footer{
 
 /*ВТОРАЯ СТРАНИЦА*/
 
-.text h1 {
+/*.text h1 {
 width: 1000px;
 text-align: center;
 margin-bottom: 115px;
 margin-top: 85px;
-}
+}*/
 
 .main {
   margin: 0 auto;
@@ -387,7 +474,7 @@ aside {
   border: 1px solid green
 }
 
-.sortimg {
+.catalog-items {
   width: 760px;
   display: inline-block;
   border: 1px solid pink;
