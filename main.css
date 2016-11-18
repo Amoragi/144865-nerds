@@ -11,7 +11,7 @@ background-repeat: no-repeat;  */
 
 header {
   background-color: #eeeeee;
-  height: 542px;
+  height: 545px;
 
   }
 
@@ -38,19 +38,21 @@ header {
     width: 100%;
     height: 100%;
     z-index: 1;
+    /*background-color: pink;*/
   }
 
 nav {
   display: inline-block;
   width: 520px;
-  margin-left: 300px;
-  padding-top: 80px;
+  margin-left: 1052px;
+  padding-top: 65px;
 
 }
 li {
+/*background-color: red;*/
   margin: 0 auto;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 42px;
 
 }
 
@@ -64,11 +66,12 @@ a {
 .userblock {
    position: absolute;;
    max-width: 140px;
-   right: 0px;
-   top: 25px;
+   right: 679px;
+   top: 12px;
    text-transform: uppercase;
    font-weight: bold;
    padding: 70px 10px 10px 50px;
+   /*background-color: red;*/
 }
 
 .userblock::before {
@@ -105,24 +108,30 @@ a {
 }
 
 .text {
-  vertical-align: top;
-  width: 440px;
+width: 440px;
   display: inline-block;
-
+  /*background-color: red;*/
+  vertical-align: top;
+  margin-top: 39px;
+line-height:1.0;
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 45px;
+  font-weight: 500;
+  font-size: 55px;
 }
 p {
-
-  margin-bottom: 40px;
+margin-top: -5px;
+  margin-bottom: 44px;
+  line-height:1.3;
 }
 
 .slider {
   display: inline-block;
 width: 700px;
+margin-left: -40px;
+margin-top: 9px;
+height: 412px;
 }
 
 
@@ -135,7 +144,7 @@ width: 700px;
   .services {
     width: 1160px;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 56px;
     border-bottom: 2px solid lightgray;
     padding-top: 80px;
     /*background-color: pink;*/
@@ -152,44 +161,50 @@ width: 700px;
   display: inline-block;
   margin-right: 0;
   margin-bottom: 25px;
+  margin-left: -5px;
 }
 
 h2 {
   text-transform: uppercase;
   margin-bottom: 27px;
+  margin-left: -1px;
 }
-
+.features-text{
+  line-height: 1.4;
+  margin-bottom: 35px;
+}
 .bookingr {
   background-color: #fb565a;
   width: 160px;
-  height: 35px;
+  height: 50px;
   display: inline-block;
   color: white;
   border-radius: 5px;
   text-align: center;
-  padding-top: 15px;
+  line-height: 50px;
+
 }
 
 .bookingg {
   width: 160px;
-  height: 35px;
+  height: 50px;
   display: inline-block;
   background-color: #00ca74;
   color: white;
   border-radius: 5px;
   text-align: center;
-  padding-top: 15px;
+  line-height: 50px;
 }
 
 .bookingy {
   width: 160px;
-  height: 35px;
+  height: 50px;
   background-color: #efc84a;
   display: inline-block;
   color: white;
   border-radius: 5px;
   text-align: center;
-  padding-top: 15px;
+  line-height: 50px;
 
 }
 
@@ -207,20 +222,20 @@ h2 {
 
 .descriptionli {
   display:block;
-  line-height: 2.1;
+  line-height: 2.9;
 
   }
 h6 {
   font-size: 45px;
 /*  background-color: blue;*/
-  margin: 100px 0px 10px 0px;
-
-  vertical-align: top;
+  margin: 70px 0px 10px 0px;
+vertical-align: top;
+line-height: 1.1;
+letter-spacing:0.23px;
+font-weight:500;
   }
 .dash {
-
-  width: 100px;
-  font-size: 20px;
+font-size: 20px;
   color: red;
   font-weight: bold;
 }
@@ -228,7 +243,8 @@ h6 {
 .descriptionText {
   width: 660px;
   display: inline-block;
-padding-right: 116px;
+margin-right: 116px;
+/*background-color: red;*/
 }
 
 ul {
@@ -237,95 +253,99 @@ ul {
 
 .rule {
 /*background-color: blue;*/
-margin: 0px 0px 45px 0px;
+margin: 26px 0px 45px 0px;
 line-height: 1.5;
 
 }
 .percent {
+  text-align: right;
   vertical-align: top;
-  width: 360px;
+  width: 380px;
   display: inline-block;
   padding-top: 40px;
-
-  /*background-color: green;
-  border: 3px solid black;*/
+/*background-color: green;*/
+  /*border: 3px solid black;*/
 }
 
 .percent h4 {
-margin-top: 20px;
-
-
-  /*background-color: pink;
+  padding-left: 30px;
+  text-align: center;
+margin-top: 35px;
+/*background-color: pink;
     */
 }
 
 h4 {
   text-transform: uppercase;
   /*background-color: blue;*/
-  margin: 0px 0px 33px 15px;
+  margin: 0px 0px 18px 0px;
+}
 
-
+.main-percent {
+  /*background-color: pink;*/
+  padding-right: 33px;
 }
 
 .point {
+  text-align: center;
 display: inline-block;
 /*background-color: red;*/
-margin-right: 20px;
 
-
+margin-top: 20px;
 }
 
-.point1 {
-  vertical-align: top;
-display: inline-block;
-/*background-color: red;*/
-margin-right: 0;
+.sign-percent {
+  text-align: left;
+  margin-top: 20px;
+  line-height: 1;
+}
+.sign-percent1 {
+  text-align: left;
+  margin-top: 20px;
+  line-height: 1;
 
 }
 
 
 
 .percents{
-
-  /*background-color: pink;*/
+/*background-color: pink;*/
   font-size: 45px;
   font-weight: bold;
-  top: -0.2em;
 
   }
+
+  .percents1{
+  /*background-color: green;*/
+    font-size: 45px;
+    font-weight: bold;
+    padding-right: 20px;
+
+    }
+
 
 
 
 .point p {
-
-  padding: 0;
+padding: 0;
   margin-bottom: 10px;
-
 }
+
 sup {
 top: -0.5em;
 font-size: 25px;
   }
 
 
-.percent h4 {
-  /*background-color: red;*/
-  display: inline-block;
-  margin-top: 50px;
-  margin-bottom: 40px;
-}
-
-
-
-/*.reddash {
+.reddash {
   background-color: #fb565a;
   width: 26px;
-  height: 3px;
+  height: 1px;
   display: inline-block;
   margin-bottom: 4px;
   margin-right: 10px;
 }
-*/
+
 
 
 
@@ -337,8 +357,8 @@ opacity: 0.2;
   margin: 0px auto;
   border-top: 2px solid black;
   border-bottom:2px solid black;
-  margin-bottom: 100px;
-  margin-top: 75px;
+  margin-bottom: 78px;
+  margin-top: 50px;
 /*background-color: #fb565a;*/
 }
 
@@ -347,20 +367,25 @@ opacity: 0.2;
     width: 280px;
       }
 
-/*.graydash {
+.graydash {
 margin-bottom: 60px;
 display: inline-block;
 height: 52px;
 width: 2px;
 background-color: black;
-}*/
+}
+
+.logothree {
+display: inline-block;
+  /*background-color: blue;*/
+  margin-left: 10px;
+}
 
 /*Пятый блок*/
 
 .map {
   position: relative;
   width: auto;
-  margin: 10px auto 47px auto;
   /**background-color: red;
 border: 10px solid black;*/
 }
@@ -368,7 +393,7 @@ border: 10px solid black;*/
 
 .metka {
   position: absolute;
-  right:850px;
+  right:1100px;
   bottom:115px;
 }
 
@@ -394,7 +419,8 @@ footer{
 .footersocial{
   display: inline-block;
   width: 300px;
-  vertical-align: top;
+
+  margin-top: 70px;
   /*background-color: red;*/
 }
 .vk {
@@ -428,19 +454,34 @@ footer{
     height: 78px;
     border-radius: 100px;
     margin-right: 14px;
+    margin-left: -5px;
     background-image: url(sprite/social.png);
     background-repeat: no-repeat;
     background-position: -90px 1px;
+}
+
+.footertext h3 {
+  vertical-align: top;
+  display: block;
+  margin-bottom: 25px;
+  margin-top: 0px;
+
 }
 .footertext{
   display: inline-block;
   width:700px;
   /*background-color: green;*/
-  margin-left: 120px;
+  margin-left: 98px;
   font-weight: bold;
+  padding-bottom: 20px;
 }
 
+#ten-percent {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
 
+}
 
 /*#vk{height:28px;width:28px;}
 #vk{background:url('img/sprite.png') -63px 10px;}
