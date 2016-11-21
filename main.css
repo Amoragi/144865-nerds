@@ -41,11 +41,23 @@ header {
     /*background-color: pink;*/
   }
 
+.main-nav {
+    display: inline-block;
+    width: 520px;
+    margin-left: 1051px;
+    padding-top: 65px;
+    /*background-color: red;*/
+
+
+  }
+
+
 nav {
   display: inline-block;
   width: 520px;
   margin-left: 1152px;
   padding-top: 65px;
+  /*background-color: red;*/
 
 
 }
@@ -140,6 +152,7 @@ a {
 }
 .features {
   width: 1160px;
+  margin: 0 auto;
   }
 
 .text {
@@ -299,6 +312,7 @@ line-height: 1.5;
   display: inline-block;
   padding-top: 40px;
 /*background-color: green;*/
+
   /*border: 3px solid black;*/
 }
 
@@ -306,6 +320,7 @@ line-height: 1.5;
   padding-left: 30px;
   text-align: center;
 margin-top: 35px;
+margin-bottom: 43px;
 /*background-color: pink;
     */
 }
@@ -318,27 +333,32 @@ h4 {
 
 .main-percent {
   /*background-color: pink;*/
-  padding-right: 33px;
+text-align: center;
 }
 
 .point {
-  text-align: center;
+text-align: center;
 display: inline-block;
 /*background-color: red;*/
-
-margin-top: 20px;
+margin-top: 33px;
+margin-left: 10px;
 }
+
 
 .sign-percent {
-  text-align: left;
-  margin-top: 20px;
-  line-height: 1;
-}
-.sign-percent1 {
+    width: 100px;
   text-align: left;
   margin-top: 20px;
   line-height: 1;
 
+}
+.sign-percent1 {
+  width: 100px;
+
+  text-align: left;
+  margin-top: 20px;
+  line-height: 1;
+background-color: pink;*/
 }
 
 
@@ -575,7 +595,7 @@ padding-top: 63px;
   display: inline-block;
   width: 760px;
   margin-left: 136px;
-  
+
 /*background-color: yellow;*/
 }
 
