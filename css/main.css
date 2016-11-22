@@ -22,6 +22,7 @@ header {
   background-position: center center;
   padding-top: 50px;
   float: left;
+  /*background-color: red;*/
 }
 
 .nerdslogo {
@@ -40,35 +41,8 @@ header {
   /*background-color: red;*/
 }
 
-.catalog-nav{
-  display: inline-block;
-  width: 520px;
-  margin-left: 365px;
-  padding-top: 65px;
-}
 
-/*.userblock-catalog {
-max-width: 140px;
-right: -9px;
-top: 12px;
-text-transform: uppercase;
-font-weight: bold;
-padding: 70px 10px 10px 50px;
-/*background-color: red;
-}
 
-.userblock-catalog::before {
-position: absolute;
-top: 59px;
-left: 5px;
-content: "";
-width: 30px;
-height: 30px;
-background:
-url("sprite/sprite.png");
-background-position: top left;
-}
-*/
 
 li {
   /*background-color: red;*/
@@ -116,9 +90,9 @@ a {
   text-align: center;
   padding-top: 16px;
 }
-.features {
-  width: 1160px;
+.slider {
   margin: 0 auto;
+  background-color: red;
 }
 
 .text {
