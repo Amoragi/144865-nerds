@@ -60,14 +60,12 @@ a {
 
 .userblock::before {
   position: absolute;
-  top: 59px;
+  top: 5px;
   left: 5px;
   content: "";
   width: 30px;
   height: 30px;
-  background:
-  url("sprite/sprite.png");
-  background-position: top left;
+  background: url("../sprite/sprite.png");
 }
 .long-expensive {
   font-size: 55px;
@@ -390,7 +388,7 @@ footer{
   height: 78px;
   border-radius: 100px;
   margin-right: 14px;
-  background-image: url(sprite/social.png);
+  background-image: url(../sprite/social.png);
   background-repeat: no-repeat;
   background-position: 2px 2px;
   vertical-align: top;
@@ -403,7 +401,7 @@ footer{
   height: 78px;
   border-radius: 100px;
   margin-right: 14px;
-  background-image: url(sprite/social.png);
+  background-image: url(../sprite/social.png);
   background-repeat: no-repeat;
   background-position: -165px 1px;
   }
@@ -416,7 +414,7 @@ footer{
   border-radius: 100px;
   margin-right: 14px;
   margin-left: -5px;
-  background-image: url(sprite/social.png);
+  background-image: url(../sprite/social.png);
   background-repeat: no-repeat;
   background-position: -90px 1px;
 }
@@ -550,6 +548,7 @@ display: inline-block;
 
 .catalog-sorts:last-child {
   margin-right: 0;
+  opacity: 0.2;
 }
 
 
@@ -754,7 +753,9 @@ h3 {
   margin-top:45px;
   display: inline-block;
 }
-
+.social-link {
+  posi
+}
 .footertext-catalog {
   display: inline-block;
   margin-left: 118px;
