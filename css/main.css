@@ -481,9 +481,9 @@ margin-top: 85px;
   margin: 0 auto;
   font-size: 55px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 65px;
   margin-bottom: 60px;
-  padding-bottom: 115px;
+  padding-bottom: 107px;
   /*background-color: pink;*/
 }
 
@@ -499,11 +499,11 @@ aside {
   /*background-color: red;*/
   font-size: 0;
   vertical-align: top;
-  margin-right: 140px;
+  margin-right: 145px;
 }
 
 .form-block {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   font-size: 20px;
   /*background-color: green;*/
 }
@@ -518,15 +518,15 @@ display: inline-block;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-right: 265px;
-  margin-bottom: 59px;
+  margin-right: 271px;
+  margin-bottom: 20px;
 
   /*background-color: yellow;*/
 }
 
 .sort-img {
-  padding-top: 10px;
-  padding-bottom: 5px;
+padding-bottom: 12px;
+padding-top: 30px;
 }
 
 .catalog-item {
@@ -537,7 +537,7 @@ display: inline-block;
   border-top: none;
   padding-top: 40px;
   display: inline-block;
-  margin-top: 7px;
+  margin-bottom: 14px;
 /*outline: 10px solid pink;*/
 }
 
@@ -554,6 +554,7 @@ display: inline-block;
 .sort-catalog-main {
   /*background-color: orange;*/
   font-size: 0px;
+  margin-bottom: 30px;
 }
 
 .catalog-sort-ul {
@@ -570,8 +571,13 @@ display: inline-block;
   font-size: 14px;
 }
 
+.catalog-sorts:nth-child(4) {
+  margin-right: 15px;
+
+}
+
 .catalog-sorts:last-child {
-  margin-right: 0;
+  margin-right: 0px;
   opacity: 0.2;
 }
 
@@ -593,7 +599,8 @@ input[type="radio"] + label {
   padding-left: 38px;
   position: relative;
   cursor: pointer;
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  font-size: 16px;
   /*background-color: red;*/
 }
 
@@ -629,6 +636,7 @@ input[type="checkbox"] + label {
   cursor: pointer;
   /*background-color: red;*/
   padding-bottom: 11px;
+  font-size: 16px;
 }
 
 input[type="checkbox"] + label::before {
@@ -654,7 +662,7 @@ background-image: url("../img/checkbox-on.png");
   background-color: #eeeeee; /*серый*/
   border-radius: 5px;
   width: 80px;
-  height: 30px;
+  height: 35px;
   text-align: center;
   margin-right: 27px;
   margin-top: 5px;
@@ -664,7 +672,7 @@ background-image: url("../img/checkbox-on.png");
   background-color: #eeeeee; /*серый*/
   border-radius: 5px;
   width: 76px;
-  height: 30px;
+  height: 35px;
   text-align: center;
   margin-top: 5px;
 }
@@ -693,7 +701,6 @@ label {
   height: 50px;
   text-align: center;
   line-height: 50px;
-  margin-top: 38px;
   font-size: 16px;
 }
 
@@ -715,13 +722,13 @@ label {
 
 .paginator {
   border-radius: 2px;
-  margin-top: 60px;
+  margin-top: 0px;
   background-color: #eeeeee;
   width: 50px;
   height: 50px;
   text-align: center;
   line-height: 50px;
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 .paginator:first-child {
@@ -736,13 +743,13 @@ label {
 
 .next {
   border-radius: 2px;
-  margin-top: 60px;
   background-color: #eeeeee;
   width: 260px;
   height: 50px;
   text-align: center;
   line-height: 50px;
-  margin-right: 10px;
+  margin-right: 9px;
+  margin-bottom: 48px;
 }
 
 h3 {
