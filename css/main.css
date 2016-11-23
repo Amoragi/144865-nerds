@@ -32,7 +32,7 @@ clear: both;
 
 .main-nav {
   float: right;
-  margin-right:183px;
+  margin-right:195px;
   padding-top: 13px;
   /*background-color: red;*/
 }
@@ -55,26 +55,39 @@ a {
   max-width: 140px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 30px 10px 10px 50px;
+  padding: 30px 0px 0px 50px;
   position: relative;
+  margin-left: 40px;
   /*background-color: red;*/
 }
 
 .userblock::before {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 19px;
+  left: 1px;
   content: "";
   width: 30px;
   height: 30px;
   background: url("../sprite/sprite.png");
 }
+
+li:last-child {
+  margin-right: 0;
+}
+
 .long-expensive {
   font-size: 55px;
+  font-weight: 500;
   text-transform: none;
-}
+  line-height: 1.1;
+  margin-bottom: 20px;
+  margin-top: 65px;
+  margin-right: 25px;
+  }
 .slide-p {
-width: 330px;
+line-height: 1.5;
+margin-bottom: 38px;
+vertical-align: top;
 }
 .button {
   display: inline-block;
