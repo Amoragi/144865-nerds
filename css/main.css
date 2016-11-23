@@ -490,10 +490,6 @@ display: inline-block;
 /*background-color: blue;*/
 }
 
-.form-block {
-  margin-bottom: 50px;
-  font-size: 20px;
-}
 .form-heading {
   vertical-align: top;
   display: inline-block;
@@ -583,7 +579,7 @@ input[type="radio"] + label::before {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("img/radio-off.png");
+  background-image: url("../img/radio-off.png");
   background-repeat: no-repeat;
   opacity: 0.5;
 }
@@ -596,7 +592,7 @@ input[type="radio"]:checked + label::after {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("img/radio-on.png");
+  background-image: url("../img/radio-on.png");
   background-repeat: no-repeat;
   opacity: 0.4;
 }
@@ -626,7 +622,7 @@ input[type="checkbox"] + label::before {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("img/checkbox-off.png");
+  background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
   opacity: 0.5;
 }
@@ -639,7 +635,7 @@ input[type="checkbox"]:checked + label::after {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
   opacity: 0.4;
 }
