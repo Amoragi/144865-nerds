@@ -32,6 +32,8 @@ clear: both;
 
 .main-nav {
   float: right;
+  margin-right:183px;
+  padding-top: 13px;
   /*background-color: red;*/
 }
 
@@ -53,7 +55,7 @@ a {
   max-width: 140px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 16px 10px 10px 50px;
+  padding: 30px 10px 10px 50px;
   position: relative;
   /*background-color: red;*/
 }
@@ -118,6 +120,8 @@ width: 330px;
   margin-top: 39px;
   line-height:1;
 }
+
+
 .description-heading {
 font-size: 45px;
 }
@@ -206,7 +210,7 @@ background-color: #fb565a;
 width: 20px;
 height: 2px;
 display: block;
-margin-left: -25px;
+left: -25px;
 position: absolute;
 top: 20px;
 }
@@ -323,6 +327,7 @@ sup {
   display: block;
   position: absolute;
   top: 60px;
+  left: 0;
 }
 
 .gray-dash {
@@ -348,11 +353,6 @@ sup {
   border: 10px solid black;*/
 }
 
-.metka {
-  position: absolute;
-  right:500px;
-  bottom:115px;
-}
 
 .adress {
   padding-top: 30px;
@@ -361,9 +361,9 @@ sup {
   background-color: white;
   width: 320px;
   height: 278px;
-  left:-50%;
+  left:50%;
   top:50px;
-  transform: translateX(580px);
+  transform: translateX(-580px);
   padding-left: 20px;
 }
 
@@ -508,9 +508,15 @@ display: inline-block;
 }
 
 .catalog-item {
+  background: url("../img/browser.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%
+  width: 100%;
+  border-top: none;
+  padding-top: 40px;
   display: inline-block;
   margin-top: 7px;
-  /*outline: 10px solid pink;*/
+/*outline: 10px solid pink;*/
 }
 
 .catalog-item:nth-child(odd) {
@@ -584,17 +590,8 @@ input[type="radio"] + label::before {
   opacity: 0.5;
 }
 
-input[type="radio"]:checked + label::after {
-  content: "";
-  width: 28px;
-  height: 28px;
-  /*background-color: red;*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../img/radio-on.png");
-  background-repeat: no-repeat;
-  opacity: 0.4;
+input[type="radio"]:checked + label::before {
+background-image: url("../img/radio-on.png");
 }
 
 input[type="checkbox"]{
@@ -615,7 +612,7 @@ input[type="checkbox"] + label {
 input[type="checkbox"] + label::before {
   content: "";
   display: block;
-  width: 23px;
+  width: 27px;
   height: 23px;
   /*border: 5px solid lightgrey;*/
   border-radius: 5px;
@@ -627,17 +624,8 @@ input[type="checkbox"] + label::before {
   opacity: 0.5;
 }
 
-input[type="checkbox"]:checked + label::after {
-  content: "";
-  width: 28px;
-  height: 23px;
-  /*background-color: red;*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../img/checkbox-on.png");
-  background-repeat: no-repeat;
-  opacity: 0.4;
+input[type="checkbox"]:checked + label::before {
+background-image: url("../img/checkbox-on.png");
 }
 
 #input-text {
