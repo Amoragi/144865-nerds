@@ -137,6 +137,9 @@ vertical-align: top;
 
 .description-heading {
 font-size: 45px;
+font-weight: 500;
+margin-top: 70px;
+line-height: 1.1;
 }
 
 /*Второй блок*/
@@ -157,12 +160,14 @@ font-size: 45px;
   display: inline-block;
   margin-bottom: 25px;
   font-size: 0;
-  margin-right: 100px;
+  margin-right: 97px;
 }
 
 .services-heading{
   font-size: 24px;
   font-weight: bold;
+  margin-top: 27px;
+  margin-bottom: 12px;
 }
 .services-item--yellow {
   width: 300px;
@@ -177,7 +182,7 @@ h2 {
   margin-bottom: 27px;
 }
 .services-services-item{
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   margin-bottom: 35px;
 }
@@ -220,7 +225,7 @@ background-color: #efc84a;
 .description-item::before{
 content:"";
 background-color: #fb565a;
-width: 20px;
+width: 25px;
 height: 2px;
 display: block;
 left: -25px;
@@ -233,6 +238,7 @@ top: 20px;
   display:block;
   line-height: 2.9;
   position: relative;
+  padding-left: 10px;
 }
 
 
@@ -243,6 +249,10 @@ top: 20px;
   margin-right: 116px;
   /*background-color: red;*/
 }
+.description-order{
+  text-transform: uppercase;
+  margin-top: 0px;
+}
 
 .percent-head{
   text-transform: uppercase;
@@ -252,7 +262,7 @@ top: 20px;
 
 .rule {
   /*background-color: blue;*/
-  margin: 26px 0px 45px 0px;
+  margin: 26px 0px 40px 0px;
   line-height: 1.5;
 }
 .percent {
@@ -282,30 +292,25 @@ top: 20px;
   text-align: center;
   display: inline-block;
   /*background-color: red;*/
-  margin-left: 10px;
 }
+
+
+
 
 .sign-percent {
   width: 100px;
   text-align: left;
-  margin-top: 20px;
+  margin-top: 15px;
   line-height: 1;
 }
-.sign-percent {
-  width: 100px;
 
-  text-align: left;
-  margin-top: 20px;
-  line-height: 1;
-  /*background-color: pink;*/
-}
 
 .percents{
   /*background-color: pink;*/
   font-size: 45px;
   font-weight: bold;
+margin-right: 20px;
 }
-
 
 .point p {
   padding: 0;
@@ -313,11 +318,9 @@ top: 20px;
 }
 
 sup {
-  top: -0.5em;
+  top: -0.7em;
   font-size: 25px;
 }
-
-
 
 /*Четвертый блок*/
 .logos{
@@ -327,7 +330,7 @@ sup {
   border-top: 2px solid black;
   border-bottom:2px solid black;
   margin-bottom: 78px;
-  margin-top: 50px;
+  margin-top: 45px;
   /*background-color: #fb565a;*/
 }
 
@@ -347,9 +350,13 @@ sup {
   display:block;
   position: relative;
   font-size: 0;
+  margin-right: 9px;
   /*background-color: red;*/
 }
-
+.gray-dash:last-child {
+  margin-right: 0px;
+  /*background-color: red;*/
+}
 .logos a {
   display: inline-block;
   width: 280px;
@@ -389,9 +396,10 @@ footer{
 .footersocial{
   display: inline-block;
   width: 300px;
-  margin-top: 10px;
+  margin-top: 50px;
   font-size: 0;
   vertical-align: top;
+  padding-left: 0px;
   /*background-color: red;*/
 }
 .link-vk {
@@ -433,9 +441,10 @@ footer{
 }
 
 .footertext h3 {
+  padding-top: 55px;
   vertical-align: top;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   margin-top: 0px;
 }
 .footertext{
