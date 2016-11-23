@@ -13,41 +13,42 @@
   <header class="page-header">
 
     <div class="container">
+      <div class="topline clearfix">
 
-      <a href="index.html" class="logo">
-        <img src="img/nerds-logo.png" alt="Вэб-студия">
-      </a>
+        <a href="index.html" class="logo">
+          <img src="img/nerds-logo.png" alt="Вэб-студия">
+        </a>
 
+        <div class="userblock">
+          <a href="#">Корзина</a>
+        </div>
 
-      <div class="userblock">
-        <a href="#">Корзина</a>
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#"> Клиенты</a>
+            </li>
+            <li>
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="#" class="contact">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <nav class="main-nav">
-        <ul>
-          <li>
-            <a href="#">Студия</a>
-          </li>
-          <li>
-            <a href="#"> Клиенты</a>
-          </li>
-          <li>
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li>
-            <a href="#" class="contact">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
 
-    <h1 class="catalog">Магазин готовых шаблонов</h1>
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
 
   </header>
   <!--Второй блок-->
   <main>
     <aside>
-      <form action="/echo" method="post" class="form">
+      <form action="/echo" method="post" class="form-aside">
         <div class="form-heading">Стоимость:</div>
 
         <img src="img/sort.jpg" alt="sort" width="260" height="80" class="sort-img">
@@ -91,83 +92,92 @@
           <label for="ch5">Корзина</label>
         </div>
 
-        <a href="#" class="show">Показать</a>
+        <a href="#" class="show-aside">Показать</a>
       </form>
     </aside>
 
+    <section class="main-catalog">
+      <div class="sort-catalog-main">
+        <div class="form-heading">Сортировать:</div>
 
-    <div class="sort">
-      <div class="main-sorts">Сортировать:</div>
+        <ul class="catalog-sort-ul">
+          <li class="catalog-sorts">
+            <a href="#">по цене</a>
+          </li>
+          <li class="catalog-sorts">
+            <a href="#" class="transporent">по типу</a>
+          </li>
+          <li class="catalog-sorts">
+            <a href="#" class="transporent">по названию</a>
+          </li>
 
-      <ul class="catalog-sort">
-        <li class="catalog-sorts"><a href="#">по цене</a></li>
-        <li class="catalog-sorts"><a href="#" class="transporent">по типу</a></li>
-        <li class="catalog-sorts"><a href="#" class="transporent">по названию</a></li>
-
-        <a href="#" class="catalog-sorts"> ▲</a>
-        <a href="#" class="transporent">▼</a>
-
-      </ul>
-    </div>
-
-
-
-    <div class="catalog-list">
-
-      <div class="catalog-item">
-        <img src="img/sedona.jpg" alt="sedona" width="360" height="576">
-        <div class="goods-hover">
-          <h2>Sedona</h2>
-          <p>Информационный сайт для туристов</p>
-          <a href="">9900 РУБ.</a>
-        </div>
+          <li class="catalog-sorts">
+            <a href="#">▲</a>
+          </li>
+          <li class="catalog-sorts">
+            <a href="#">▼</a>
+          </li>
+        </ul>
+      </div>
       </div>
 
-      <div class="catalog-item">
-        <img src="img/pink.jpg" alt="pink" width="360" height="576">
-        <div class="goods-hover">
-          <h2>Pink app</h2>
-          <p>Продуктовый лендинг приложения для IOS и Android</p>
-          <a href="">9900 РУБ.</a>
+
+      <div class="catalog-list">
+
+        <div class="catalog-item">
+          <img src="img/sedona.jpg" alt="sedona" width="360" height="576">
+          <div class="goods-hover">
+            <h2>Sedona</h2>
+            <p>Информационный сайт для туристов</p>
+            <a href="">9900 РУБ.</a>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <img src="img/pink.jpg" alt="pink" width="360" height="576">
+          <div class="goods-hover">
+            <h2>Pink app</h2>
+            <p>Продуктовый лендинг приложения для IOS и Android</p>
+            <a href="">9900 РУБ.</a>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <img src="img/barbershop.jpg" alt="barbershop" width="360" height="576">
+          <div class="goods-hover">
+            <h2>Barbershop</h2>
+            <p>Сайт салоны красоты. Для мужчин, да.</p>
+            <a href="">9900 РУБ.</a>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <img src="img/mishka.jpg" alt="mishka" width="360" height="576">
+          <div class="goods-hover">
+            <h2>Mishka</h2>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a href="">9900 РУБ.</a>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <img src="img/aplus.jpg" alt="alpus" width="360" height="576">
+          <div class="goods-hover">
+            <h2>A Plus</h2>
+            <p>Лэндинг курсов повышения квалификации</p>
+            <a href="">9900 РУБ.</a>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <img src="img/kvast.jpg" alt="kvast" width="360" height="576">
+          <div class="goods-hover">
+            <h2>Кваст</h2>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a href="">9900 РУБ.</a>
+          </div>
         </div>
       </div>
-
-      <div class="catalog-item">
-        <img src="img/barbershop.jpg" alt="barbershop" width="360" height="576">
-        <div class="goods-hover">
-          <h2>Barbershop</h2>
-          <p>Сайт салоны красоты. Для мужчин, да.</p>
-          <a href="">9900 РУБ.</a>
-        </div>
-      </div>
-
-      <div class="catalog-item">
-        <img src="img/mishka.jpg" alt="mishka" width="360" height="576">
-        <div class="goods-hover">
-          <h2>Mishka</h2>
-          <p>Интернет-магазин вязаных игрушек</p>
-          <a href="">9900 РУБ.</a>
-        </div>
-      </div>
-
-      <div class="catalog-item">
-        <img src="img/aplus.jpg" alt="alpus" width="360" height="576">
-        <div class="goods-hover">
-          <h2>A Plus</h2>
-          <p>Лэндинг курсов повышения квалификации</p>
-          <a href="">9900 РУБ.</a>
-        </div>
-      </div>
-
-      <div class="catalog-item">
-        <img src="img/kvast.jpg" alt="kvast" width="360" height="576">
-        <div class="goods-hover">
-          <h2>Кваст</h2>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <a href="">9900 РУБ.</a>
-        </div>
-      </div>
-
 
       <div class="page">
         <ul class="page-catalog">
@@ -185,7 +195,8 @@
           </li>
         </ul>
       </div>
-    </div>
+      </div>
+    </section>
   </main>
 
 
@@ -212,40 +223,27 @@
 
   <!--Шестой блок-->
 
-
-  <footer class="page-header">
+  <footer class="page-footer">
     <ul class="footersocial">
-      <li class="vk">
+      <li class="link-vk">
         <a href="https://vk.com/" class="social-link">Мы в ВК</a>
       </li>
 
-      <li class="fb">
+      <li class="link-fb">
         <a href="https://www.facebook.com/" class="social-link">Мы в Фэйсбук</a>
       </li>
 
-      <li class="inst">
+      <li class="link-inst">
         <a href="https://www.instagram.com/" class="social-link">Мы в Инстаграм</a>
       </li>
     </ul>
 
     <div class="footertext">
-      <h3>Давайте дружить, это выгодно!</h3>
+      <h3 class="lets-friend">Давайте дружить, это выгодно!</h3>
       <p id="ten-percent">Скидка 10% для друзей из социальных сетей.</p>
     </div>
 
   </footer>
-</body>
-
-</html>
-</li>
-</ul>
-
-<div class="footertext">
-  <h3>Давайте дружить, это выгодно!</h3>
-  <p id="ten-percent">Скидка 10% для друзей из социальных сетей.</p>
-</div>
-
-</footer>
 </body>
 
 </html>

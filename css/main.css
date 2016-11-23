@@ -5,7 +5,6 @@ body {
 
 header {
   background-color: #eeeeee;
-  height: 545px;
   min-width: 1160px;
 }
 
@@ -457,14 +456,14 @@ margin-bottom: 115px;
 margin-top: 85px;
 }*/
 
-.headercatalog {
-  height: 355px;
-  background-color: #eeeeee;
-}
-.catalog {
-  margin: 73px 0 0 0;
+
+.catalog-title {
+  margin: 0 auto;
   font-size: 55px;
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  padding-bottom: 115px;
   /*background-color: pink;*/
 }
 
@@ -476,8 +475,21 @@ main {
 }
 aside {
   display: inline-block;
-  width: 260px;
+  width: 250px;
   /*background-color: red;*/
+  font-size: 0;
+  vertical-align: top;
+  margin-right: 140px;
+}
+
+.form-block {
+  margin-bottom: 50px;
+  font-size: 20px;
+  /*background-color: green;*/
+}
+.form-aside {
+display: inline-block;
+/*background-color: blue;*/
 }
 
 .form-block {
@@ -487,8 +499,12 @@ aside {
 .form-heading {
   vertical-align: top;
   display: inline-block;
-  width: 760px;
-  margin-left: 136px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 265px;
+  margin-bottom: 59px;
+
   /*background-color: yellow;*/
 }
 
@@ -497,28 +513,43 @@ aside {
   padding-bottom: 5px;
 }
 
-.catalog-items {
-  width: 760px;
+.catalog-item {
   display: inline-block;
   margin-top: 7px;
-  /* background-color: pink;*/
+  /*outline: 10px solid pink;*/
 }
 
-.main-sorts {
-  width: 340px;
-  /*background-color: red;*/
+.catalog-item:nth-child(odd) {
+  margin-right: 40px;
 }
 
-.catalog-sort {
+.main-catalog{
   display: inline-block;
-  /*background-color: pink;*/
-  font-size: 14px;
-  width: 360px;
-  margin-left: 56px;
+  font-size: 0;
+  /*background-color: green;*/
+  width: 760px;
+}
+.sort-catalog-main {
+  /*background-color: orange;*/
+  font-size: 0px;
+}
+
+.catalog-sort-ul {
+  display: inline-block;
+  /*background-color: green;*/
+  padding: 0;
+  width: 350;
+  text-align: right;
 }
 
 .catalog-sorts {
+  display: inline-block;
   margin-right: 26px;
+  font-size: 14px;
+}
+
+.catalog-sorts:last-child {
+  margin-right: 0;
 }
 
 
@@ -649,7 +680,7 @@ label {
   margin: 0 0 10px 0;
 }
 
-.show {
+.show-aside {
   display: block;
   background-color: #eeeeee;
   border-radius: 2px;
@@ -658,6 +689,7 @@ label {
   text-align: center;
   line-height: 50px;
   margin-top: 38px;
+  font-size: 16px;
 }
 
 .main {
@@ -671,6 +703,11 @@ label {
   opacity: 0.3;
 }
 
+.page-catalog {
+  padding-left: 0;
+  font-size: 14px;
+}
+
 .paginator {
   border-radius: 2px;
   margin-top: 60px;
@@ -680,6 +717,16 @@ label {
   text-align: center;
   line-height: 50px;
   margin-right: 10px;
+}
+
+.paginator:first-child {
+  background-color: white;
+  border: #dbdbdb solid 5px;
+  border-radius: 5px;
+  height: 42px;
+  width: 42px;
+  vertical-align: top;
+  line-height: 42px;
 }
 
 .next {
