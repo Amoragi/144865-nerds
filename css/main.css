@@ -50,12 +50,16 @@ clear: both;
   color: black;
   font-weight: bolder;
 }
+
+.contact {
+  margin-right: -2px;
+}
 .userblock {
   float: right;
   max-width: 140px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 30px 0px 0px 50px;
+  padding: 31px 0px 0px 50px;
   position: relative;
   margin-left: 40px;
   /*background-color: red;*/
@@ -63,7 +67,7 @@ clear: both;
 
 .userblock::before {
   position: absolute;
-  top: 19px;
+  top: 21px;
   left: 1px;
   content: "";
   width: 30px;
@@ -87,16 +91,43 @@ clear: both;
   margin-top: 68px;
   margin-right: 25px;
   }
+  .slider-controls i{
+      display:inline-block;
+      width:15px;
+      height:15px;
+      margin:0 3px;
+      background:white;
+      border:3px solid white;
+      vertical-align:top;
+      border-radius:50%;
+      cursor:pointer;
+      margin-right: 7px;
+  }
+  .slider-controls .active{
+      background:lightgray;
+      border: 3px solid white;
+  }
+
+
 
 .slide-long-expensive {
     background-color: #eeeeee;
     background-image: url(../img/slider-1.jpg);
     background-repeat: no-repeat;
     background-position: right bottom;
-    padding-bottom: 85px;
+    padding-bottom: 79px;
+    /* margin: 0 auto; */
+  }
+
+.slider-controls {
+text-align: center;
+/* padding-top: 150px; */
+position: absolute;
+top: 432px;
+left: 535px;
 }
 .slide-p {
-line-height: 1.5;
+line-height: 26px;
 margin-bottom: 38px;
 vertical-align: top;
 }
@@ -107,8 +138,9 @@ vertical-align: top;
   color: white;
   text-transform: uppercase;
   text-align: center;
-  padding: 18px 10px 15px;
+  padding: 16px 10px 15px;
   min-width: 220px;
+  text-decoration: none;
 }
 
 
@@ -147,8 +179,8 @@ vertical-align: top;
 .description-heading {
 font-size: 45px;
 font-weight: 500;
-margin-top: 70px;
-line-height: 49px;
+margin-top: 74px;
+line-height: 45px;
 }
 
 /*Второй блок*/
@@ -159,7 +191,7 @@ line-height: 49px;
   margin: 0 auto;
   padding-bottom: 56px;
   border-bottom: 2px solid lightgray;
-  padding-top: 80px;
+  padding-top: 82px;
   /*background-color: pink;*/
 }
 
@@ -176,7 +208,7 @@ line-height: 49px;
   font-size: 24px;
   font-weight: bold;
   margin-top: 27px;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 .services-item--yellow {
   margin-right: 0;
@@ -188,8 +220,8 @@ h2 {
 }
 .services-services-item{
   font-size: 16px;
-  line-height: 1.4;
-  margin-bottom: 35px;
+  line-height: 24px;
+  margin-bottom: 33px;
 }
 .booking {
   width: 160px;
@@ -201,6 +233,7 @@ h2 {
   line-height: 50px;
   font-size: 16px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .booking--red {
   background-color: #fb565a;
@@ -208,6 +241,7 @@ h2 {
 
 .booking--green {
   background-color: #00ca74;
+
 }
 
 .booking--yellow {
@@ -232,15 +266,15 @@ background-color: #fb565a;
 width: 25px;
 height: 2px;
 display: block;
-left: -25px;
+left: -23px;
 position: absolute;
-top: 20px;
+top: 22px;
 }
 
 
 .description-item {
   display:block;
-  line-height: 2.9;
+  line-height: 48px;
   position: relative;
   padding-left: 10px;
 }
@@ -256,13 +290,14 @@ top: 20px;
 
 .description-rule {
   /*background-color: blue;*/
-  margin: 26px 0px 40px 0px;
+  margin: 34px 0px 42px 0px;
   line-height: 1.5;
 }
 
 .description-order{
   text-transform: uppercase;
   margin-top: 0px;
+      margin-bottom: 17px;
 }
 
 .percent-head{
@@ -293,10 +328,10 @@ top: 20px;
 .main-percent {
   /*background-color: pink;*/
   text-align: center;
+  padding-right: 10px;
 }
 
 .point {
-  text-align: center;
   display: inline-block;
   /*background-color: red;*/
 }
@@ -308,15 +343,26 @@ top: 20px;
   width: 100px;
   text-align: left;
   margin-top: 15px;
-  line-height: 1;
+  line-height: 17px;
 }
 
 
-.percents{
+.percents {
   /*background-color: pink;*/
   font-size: 45px;
   font-weight: bold;
-margin-right: 20px;
+  margin-right: 8px;
+}
+.point:first-child {
+  margin-right: 13px;
+}
+/* НЕ РАБОТАЕТ span:last-child {
+  margin-right: 17px;
+  background-color: red;
+}
+*/
+.percent-sup {
+  margin-right: 5px;
 }
 
 .point p {
@@ -350,8 +396,9 @@ sup {
   height: 54px;
   display: block;
   position: absolute;
-  top: 60px;
-  left: 0;
+  top: 64px;
+  left: 281;
+  /*left не работает*/
 }
 
 .gray-dash {
@@ -368,15 +415,16 @@ sup {
   display: inline-block;
   width: 260px;
   margin: 0 20px;
+  text-align: center;
 }
 
 .logos a:first-child{
   margin-left:0;
 }
-.logos :last-child{
+.logos a:last-child{
   margin-right:0;
 }
-.logos a:last-child after{
+.logos a:last-child:after{
   display: none;
 }
 
@@ -393,16 +441,16 @@ sup {
 
 
 .adress {
-  padding-top: 30px;
+  padding-top: 35px;
   text-align: left;
   position: absolute;
   background-color: white;
-  width: 320px;
-  height: 278px;
+  width: 271px;
+  height: 276px;
   left:50%;
-  top:50px;
+  top:58px;
   transform: translateX(-580px);
-  padding-left: 50px;
+  padding-left: 52px;
 }
 .adress-logo {
   font-size: 18px;
@@ -410,7 +458,9 @@ sup {
 }
 
 .adress-text {
-  font-size: 18px;
+  font-size: 16px;
+  margin-top: 27px;
+  margin-bottom: 18px;
 }
 .map-button {
   display: inline-block;
@@ -420,8 +470,12 @@ sup {
   font-size: 16px;
   text-transform: uppercase;
   background-color: #fb565a;
-  padding: 15px 40px 15px;
+  padding: 15px 44px 15px;
   text-decoration: none;
+  }
+
+.adress-phone {
+    margin-bottom: 40px;
   }
 /*Шестой блок*/
 footer{
@@ -432,47 +486,34 @@ footer{
 .footersocial{
   display: inline-block;
   width: 300px;
-  margin-top: 50px;
+  margin-top: 53px;
   font-size: 0;
   vertical-align: top;
   padding-left: 0px;
   /*background-color: red;*/
 }
-.link-vk {
+.social-links {
   display: inline-block;
   background-color: lightgray;
   width: 78px;
   height: 78px;
   border-radius: 100px;
   margin-right: 14px;
-  background-image: url(../sprite/social.png);
-  background-repeat: no-repeat;
-  background-position: 2px 2px;
   vertical-align: top;
-  }
-
-.link-fb {
-  display: inline-block;
-  background-color: lightgray;
-  width: 78px;
-  height: 78px;
-  border-radius: 100px;
-  margin-right: 14px;
-  background-image: url(../sprite/social.png);
   background-repeat: no-repeat;
+}
+.link--vk {
+  background-image: url(../sprite/social.png);
+  background-position: 2px 2px;
+}
+
+.link--fb {
+  background-image: url(../sprite/social.png);
   background-position: -165px 1px;
   }
 
-.link-inst {
-  display: inline-block;
-  background-color: lightgray;
-  width: 78px;
-  height: 78px;
-  border-radius: 100px;
-  margin-right: 14px;
-  margin-left: -5px;
+.link--inst {
   background-image: url(../sprite/social.png);
-  background-repeat: no-repeat;
   background-position: -90px 1px;
 }
 
@@ -492,7 +533,7 @@ footer{
   padding-bottom: 20px;
 }
 
-#ten-percent {
+.ten-percent {
   font-weight: normal;
   margin: 0;
   padding: 0;
