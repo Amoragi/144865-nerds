@@ -20,7 +20,7 @@
         </a>
 
         <div class="userblock">
-          <a href="#">Корзина</a>
+          <a href="#" class="icon-trash">Корзина</a>
         </div>
 
         <nav class="main-nav">
@@ -40,203 +40,202 @@
           </ul>
         </nav>
       </div>
-    </div>
 
-    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
 
   </header>
   <!--Второй блок-->
   <main>
-    <aside>
-      <form action="/echo" method="post" class="form-aside">
-        <div class="form-heading">Стоимость:</div>
+    <section class="main-bloks">
+      <div class="container-catalog">
+        <aside>
+          <form action="/echo" method="post" class="form-aside">
+            <div class="form-heading">Стоимость:</div>
 
-        <img src="img/sort.jpg" alt="sort" width="260" height="80" class="sort-img">
+            <form action="form.php" method="GET">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+                </div>
+              </div>
+            </form>
 
-        <div class="form-block">
-          <label for="input-text">от</label>
-          <input type="text" value="0" id="input-text" class="input-text">
+            <div class="form-heading">Сетка:</div>
 
-          <label for="input-texts"> до</label>
-          <input type="text" value="15 000" id="input-texts" class="input-texts">
-        </div>
+            <div class="form-block">
+              <input checked type="radio" name="view" value="Адаптивная" id="rad">
+              <label for="rad">Адаптивная</label>
 
+              <input type="radio" name="view" value="Фиксированная" id="rad1">
+              <label for="rad1">Фиксированная</label>
 
-
-        <div class="form-heading">Сетка:</div>
-
-        <div class="form-block">
-          <input checked type="radio" name="view" value="Адаптивная" id="rad">
-          <label for="rad">Адаптивная</label>
-
-          <input type="radio" name="view" value="Фиксированная" id="rad1">
-          <label for="rad1">Фиксированная</label>
-
-          <input type="radio" name="view" value="Резиновая" id="rad2">
-          <label for="rad2">Резиновая</label>
-        </div>
+              <input type="radio" name="view" value="Резиновая" id="rad2">
+              <label for="rad2">Резиновая</label>
+            </div>
 
 
-        <div class="form-heading">Особенности:</div>
+            <div class="form-heading">Особенности:</div>
 
-        <div class="form-block">
-          <input type="checkbox" id="ch1" checked>
-          <label for="ch1">Слайдер</label>
-          <input type="checkbox" id="ch2">
-          <label for="ch2">Блок преимуществ</label>
-          <input checked type="checkbox" id="ch3">
-          <label for="ch3">Новости</label>
-          <input type="checkbox" id="ch4">
-          <label for="ch4">Галерея</label>
-          <input type="checkbox" id="ch5">
-          <label for="ch5">Корзина</label>
-        </div>
+            <div class="form-block">
+              <input type="checkbox" id="ch1" checked>
+              <label for="ch1">Слайдер</label>
+              <input type="checkbox" id="ch2">
+              <label for="ch2">Блок преимуществ</label>
+              <input checked type="checkbox" id="ch3">
+              <label for="ch3">Новости</label>
+              <input type="checkbox" id="ch4">
+              <label for="ch4">Галерея</label>
+              <input type="checkbox" id="ch5">
+              <label for="ch5">Корзина</label>
+            </div>
 
-        <a href="#" class="show-aside">Показать</a>
-      </form>
-    </aside>
+            <a href="#" class="show-aside">Показать</a>
+          </form>
+        </aside>
 
-    <section class="main-catalog">
-      <div class="sort-catalog-main">
-        <div class="form-sort">Сортировать:</div>
+        <section class="main-catalog">
+          <div class="sort-catalog-main">
+            <div class="form-sort">Сортировать:</div>
 
-        <ul class="catalog-sort-ul">
-          <li class="catalog-sorts">
-            <a href="#">по цене</a>
-          </li>
-          <li class="catalog-sorts">
-            <a href="#" class="transporent">по типу</a>
-          </li>
-          <li class="catalog-sorts">
-            <a href="#" class="transporent">по названию</a>
-          </li>
+            <ul class="catalog-sort-ul clearfix">
+              <li class="catalog-sorts">
+                <a href="#" class="catalog-sorts">по цене</a>
+              </li>
+              <li class="catalog-sorts">
+                <a href="#" class="transporent">по типу</a>
+              </li>
+              <li class="catalog-sorts">
+                <a href="#" class="transporent">по названию</a>
+              </li>
+              <li class="catalog-sorts">
+                <a href="#">▼</a>
+                <a href="#">▲</a>
+              </li>
+            </ul>
 
-          <li class="catalog-sorts">
-            <a href="#">▼▲</a>
-          </li>
+          </div>
 
-        </ul>
+          <div class="catalog-list">
+
+            <div class="catalog-item">
+              <img src="img/sedona.jpg" alt="sedona" width="360" height="576">
+              <div class="goods-hover">
+                <h2>Sedona</h2>
+                <p>Информационный сайт для туристов</p>
+                <a href="">9900 РУБ.</a>
+              </div>
+            </div>
+
+            <div class="catalog-item">
+              <img src="img/pink.jpg" alt="pink" width="360" height="576">
+              <div class="goods-hover">
+                <h2>Pink app</h2>
+                <p>Продуктовый лендинг приложения для IOS и Android</p>
+                <a href="">9900 РУБ.</a>
+              </div>
+            </div>
+
+            <div class="catalog-item">
+              <img src="img/barbershop.jpg" alt="barbershop" width="360" height="576">
+              <div class="goods-hover">
+                <h2>Barbershop</h2>
+                <p>Сайт салоны красоты. Для мужчин, да.</p>
+                <a href="">9900 РУБ.</a>
+              </div>
+            </div>
+
+            <div class="catalog-item">
+              <img src="img/mishka.jpg" alt="mishka" width="360" height="576">
+              <div class="goods-hover">
+                <h2>Mishka</h2>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <a href="">9900 РУБ.</a>
+              </div>
+            </div>
+
+            <div class="catalog-item">
+              <img src="img/aplus.jpg" alt="alpus" width="360" height="576">
+              <div class="goods-hover">
+                <h2>A Plus</h2>
+                <p>Лэндинг курсов повышения квалификации</p>
+                <a href="">9900 РУБ.</a>
+              </div>
+            </div>
+
+            <div class="catalog-item">
+              <img src="img/kvast.jpg" alt="kvast" width="360" height="576">
+              <div class="goods-hover">
+                <h2>Кваст</h2>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a href="">9900 РУБ.</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="page">
+            <ul class="page-catalog">
+              <li class="paginator">
+                <a>1</a>
+              </li>
+              <li class="paginator">
+                <a href="#">2</a>
+              </li>
+              <li class="paginator">
+                <a href="#">3</a>
+              </li>
+              <li class="paginator">
+                <a href="#">следующая</a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
-
-      <div class="catalog-list">
-
-        <div class="catalog-item">
-          <img src="img/sedona.jpg" alt="sedona" width="360" height="576">
-          <div class="goods-hover">
-            <h2>Sedona</h2>
-            <p>Информационный сайт для туристов</p>
-            <a href="">9900 РУБ.</a>
-          </div>
-        </div>
-
-        <div class="catalog-item">
-          <img src="img/pink.jpg" alt="pink" width="360" height="576">
-          <div class="goods-hover">
-            <h2>Pink app</h2>
-            <p>Продуктовый лендинг приложения для IOS и Android</p>
-            <a href="">9900 РУБ.</a>
-          </div>
-        </div>
-
-        <div class="catalog-item">
-          <img src="img/barbershop.jpg" alt="barbershop" width="360" height="576">
-          <div class="goods-hover">
-            <h2>Barbershop</h2>
-            <p>Сайт салоны красоты. Для мужчин, да.</p>
-            <a href="">9900 РУБ.</a>
-          </div>
-        </div>
-
-        <div class="catalog-item">
-          <img src="img/mishka.jpg" alt="mishka" width="360" height="576">
-          <div class="goods-hover">
-            <h2>Mishka</h2>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a href="">9900 РУБ.</a>
-          </div>
-        </div>
-
-        <div class="catalog-item">
-          <img src="img/aplus.jpg" alt="alpus" width="360" height="576">
-          <div class="goods-hover">
-            <h2>A Plus</h2>
-            <p>Лэндинг курсов повышения квалификации</p>
-            <a href="">9900 РУБ.</a>
-          </div>
-        </div>
-
-        <div class="catalog-item">
-          <img src="img/kvast.jpg" alt="kvast" width="360" height="576">
-          <div class="goods-hover">
-            <h2>Кваст</h2>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a href="">9900 РУБ.</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="page">
-        <ul class="page-catalog">
-          <li class="paginator">
-            <a>1</a>
-          </li>
-          <li class="paginator">
-            <a href="#">2</a>
-          </li>
-          <li class="paginator">
-            <a href="#">3</a>
-          </li>
-          <li class="paginator">
-            <a href="#">следующая</a>
-          </li>
-        </ul>
-      </div>
-    </section>
   </main>
-
-
-
-
-
-  <!--Третий блок-->
+  </section>
+  <!--Пятый блок-->
 
   <section class="map">
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=uupC6ytt-YlZ55ZPd0c9Wkb6sDiKhY8X&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
     <div class="adress">
-      <h2>nёrds design studio</h2>
-      <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д.19/8</p>
-      <p>тел. +7 (812) 275-75-75</p>
-      <a href="#" class="bookingr">Напишите нам</a>
+      <h3 class="adress-logo">nёrds design studio</h3>
+      <p class="adress-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д.19/8</p>
+      <p class="adress-phone">тел. +7 (812) 275-75-75</p>
+      <a href="#" class="map-button">Напишите нам</a>
     </div>
 
   </section>
-
 
   <!--Шестой блок-->
 
   <footer class="page-footer">
     <ul class="footersocial">
-      <li class="link-vk">
+      <li class="social-links link--vk">
         <a href="https://vk.com/" class="social-link">Мы в ВК</a>
       </li>
 
-      <li class="link-fb">
+      <li class="social-links link--fb">
         <a href="https://www.facebook.com/" class="social-link">Мы в Фэйсбук</a>
       </li>
 
-      <li class="link-inst">
+      <li class="social-links link--inst">
         <a href="https://www.instagram.com/" class="social-link">Мы в Инстаграм</a>
       </li>
     </ul>
 
     <div class="footertext">
       <h3 class="lets-friend">Давайте дружить, это выгодно!</h3>
-      <p id="ten-percent">Скидка 10% для друзей из социальных сетей.</p>
+      <p class="ten-percent">Скидка 10% для друзей из социальных сетей.</p>
     </div>
 
   </footer>
-
 </body>
 
 </html>
-tml> l>
