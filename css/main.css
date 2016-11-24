@@ -33,18 +33,18 @@ clear: both;
 .main-nav {
   float: right;
   margin-right:195px;
-  padding-top: 13px;
+  padding-top: 15px;
   /*background-color: red;*/
 }
 
-li {
+.main-nav li {
   /*background-color: red;*/
   margin: 0 auto;
   display: inline-block;
   margin-right: 42px;
 }
 
-a {
+.main-nav a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -70,49 +70,58 @@ a {
   height: 30px;
   background: url("../sprite/sprite.png");
 }
-
-li:last-child {
+.icon-trash {
+  text-decoration: none;
+  color: black;
+}
+.main-nav li:last-child {
   margin-right: 0;
 }
 
-.long-expensive {
+.slide-heading {
   font-size: 55px;
   font-weight: 500;
   text-transform: none;
-  line-height: 1.1;
-  margin-bottom: 20px;
-  margin-top: 65px;
+  line-height: 1.03;
+  margin-bottom: 25px;
+  margin-top: 68px;
   margin-right: 25px;
   }
+
+.slide-long-expensive {
+    background-color: #eeeeee;
+    background-image: url(../img/slider-1.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-bottom: 85px;
+}
 .slide-p {
 line-height: 1.5;
 margin-bottom: 38px;
 vertical-align: top;
 }
-.button {
+.slide-button {
   display: inline-block;
   background-color: #fb565a;
   border-radius: 5px;
-  width: 240px;
-  height: 35px;
   color: white;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 16px;
+  padding: 18px 10px 15px;
+  min-width: 220px;
 }
-.slider {
-  /*background-color: red;*/
-  display: inline-block;
-  width: 700px;
-    /*border: 5px solid green;*/
-}
+
 
 .slide {
   width: 1160px;
+  /*background-color: red;
   /*border: 10px solid green;*/
 }
 
-.long-text {
+
+
+
+.slide-text {
   display: inline-block;
   /*background-color: red;*/
   vertical-align: top;
@@ -139,7 +148,7 @@ vertical-align: top;
 font-size: 45px;
 font-weight: 500;
 margin-top: 70px;
-line-height: 1.1;
+line-height: 49px;
 }
 
 /*Второй блок*/
@@ -163,19 +172,15 @@ line-height: 1.1;
   margin-right: 97px;
 }
 
-.services-heading{
+.services-heading {
   font-size: 24px;
   font-weight: bold;
   margin-top: 27px;
-  margin-bottom: 12px;
+  margin-bottom: 22px;
 }
 .services-item--yellow {
-  width: 300px;
-  display: inline-block;
   margin-right: 0;
-  margin-bottom: 25px;
-  font-size: 16px;
-}
+  }
 
 h2 {
   text-transform: uppercase;
@@ -216,7 +221,6 @@ background-color: #efc84a;
 }
 
 .description{
-  width: 1160px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -249,6 +253,13 @@ top: 20px;
   margin-right: 116px;
   /*background-color: red;*/
 }
+
+.description-rule {
+  /*background-color: blue;*/
+  margin: 26px 0px 40px 0px;
+  line-height: 1.5;
+}
+
 .description-order{
   text-transform: uppercase;
   margin-top: 0px;
@@ -260,11 +271,7 @@ top: 20px;
   margin: 0px 0px 35px 0px;
 }
 
-.rule {
-  /*background-color: blue;*/
-  margin: 26px 0px 40px 0px;
-  line-height: 1.5;
-}
+
 .percent {
   text-align: right;
   vertical-align: top;
@@ -325,12 +332,13 @@ sup {
 /*Четвертый блок*/
 .logos{
   opacity: 0.2;
-  width: 1160px;
   margin: 0px auto;
   border-top: 2px solid black;
   border-bottom:2px solid black;
   margin-bottom: 78px;
   margin-top: 45px;
+  font-size: 0;
+  text-align: center;
   /*background-color: #fb565a;*/
 }
 
@@ -350,7 +358,6 @@ sup {
   display:block;
   position: relative;
   font-size: 0;
-  margin-right: 9px;
   /*background-color: red;*/
 }
 .gray-dash:last-child {
@@ -359,7 +366,18 @@ sup {
 }
 .logos a {
   display: inline-block;
-  width: 280px;
+  width: 260px;
+  margin: 0 20px;
+}
+
+.logos a:first-child{
+  margin-left:0;
+}
+.logos :last-child{
+  margin-right:0;
+}
+.logos a:last-child after{
+  display: none;
 }
 
 /*Пятый блок*/
@@ -384,9 +402,27 @@ sup {
   left:50%;
   top:50px;
   transform: translateX(-580px);
-  padding-left: 20px;
+  padding-left: 50px;
+}
+.adress-logo {
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
+.adress-text {
+  font-size: 18px;
+}
+.map-button {
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  padding: 15px 40px 15px;
+  text-decoration: none;
+  }
 /*Шестой блок*/
 footer{
   width: 1160px;
@@ -487,7 +523,7 @@ margin-top: 85px;
   /*background-color: pink;*/
 }
 
-main {
+.container {
   margin: 0 auto;
   width: 1160px;
   /*background-color: orange;*/
@@ -495,7 +531,7 @@ main {
 }
 aside {
   display: inline-block;
-  width: 250px;
+  width: 260px;
   /*background-color: red;*/
   font-size: 0;
   vertical-align: top;
@@ -503,12 +539,14 @@ aside {
 }
 
 .form-block {
-  margin-bottom: 60px;
-  font-size: 20px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  text-transform: none;
   /*background-color: green;*/
 }
 .form-aside {
 display: inline-block;
+text-transform: uppercase;
 /*background-color: blue;*/
 }
 
@@ -520,15 +558,16 @@ display: inline-block;
   text-transform: uppercase;
   margin-right: 271px;
   margin-bottom: 20px;
-
-  /*background-color: yellow;*/
+ /*background-color: yellow;*/
 }
 
 .sort-img {
 padding-bottom: 12px;
 padding-top: 30px;
 }
+.form-sort{
 
+}
 .catalog-item {
   background: url("../img/browser.png");
   background-repeat: no-repeat;
@@ -537,7 +576,7 @@ padding-top: 30px;
   border-top: none;
   padding-top: 40px;
   display: inline-block;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 /*outline: 10px solid pink;*/
 }
 
@@ -594,7 +633,7 @@ input[type="radio"]{
 
 input[type="radio"] + label {
   display: block;
-  margin: 10px 0;
+  margin: 0 0 10px;
   line-height: 20px;
   padding-left: 38px;
   position: relative;
@@ -629,7 +668,7 @@ input[type="checkbox"]{
 
 input[type="checkbox"] + label {
   display: block;
-  margin: 10px 0;
+  margin: 0px 0 10px;
   line-height: 20px;
   padding-left: 38px;
   position: relative;
@@ -658,17 +697,18 @@ input[type="checkbox"]:checked + label::before {
 background-image: url("../img/checkbox-on.png");
 }
 
-#input-text {
+.input-text {
   background-color: #eeeeee; /*серый*/
   border-radius: 5px;
   width: 80px;
   height: 35px;
   text-align: center;
-  margin-right: 27px;
+  margin-right: 28px;
   margin-top: 5px;
+  border: none;
 }
 
-#input-texts {
+.input-texts {
   background-color: #eeeeee; /*серый*/
   border-radius: 5px;
   width: 76px;
@@ -729,6 +769,7 @@ label {
   text-align: center;
   line-height: 50px;
   margin-right: 9px;
+    font-size: 14px;
 }
 
 .paginator:first-child {
@@ -739,6 +780,7 @@ label {
   width: 42px;
   vertical-align: top;
   line-height: 42px;
+
 }
 
 .next {
