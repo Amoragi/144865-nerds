@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--inner">
 
     <div class="container">
       <div class="topline clearfix">
@@ -42,171 +42,171 @@
       </div>
 
       <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-
+    </div>
   </header>
   <!--Второй блок-->
   <main>
-    <section class="main-bloks">
-      <div class="container-catalog">
-        <aside>
-          <form action="/echo" method="post" class="form-aside">
-            <div class="form-heading">Стоимость:</div>
+    <div class="container clearfix">
+      <aside>
+        <form action="/echo" method="post" class="form-aside">
+          <div class="form-heading">Стоимость:</div>
 
-            <form action="form.php" method="GET">
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
-                  </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
-                </div>
-                <div class="price-controls">
-                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
-                </div>
+
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
-            </form>
-
-            <div class="form-heading">Сетка:</div>
-
-            <div class="form-block">
-              <input checked type="radio" name="view" value="Адаптивная" id="rad">
-              <label for="rad">Адаптивная</label>
-
-              <input type="radio" name="view" value="Фиксированная" id="rad1">
-              <label for="rad1">Фиксированная</label>
-
-              <input type="radio" name="view" value="Резиновая" id="rad2">
-              <label for="rad2">Резиновая</label>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
-
-
-            <div class="form-heading">Особенности:</div>
-
-            <div class="form-block">
-              <input type="checkbox" id="ch1" checked>
-              <label for="ch1">Слайдер</label>
-              <input type="checkbox" id="ch2">
-              <label for="ch2">Блок преимуществ</label>
-              <input checked type="checkbox" id="ch3">
-              <label for="ch3">Новости</label>
-              <input type="checkbox" id="ch4">
-              <label for="ch4">Галерея</label>
-              <input type="checkbox" id="ch5">
-              <label for="ch5">Корзина</label>
-            </div>
-
-            <a href="#" class="show-aside">Показать</a>
-          </form>
-        </aside>
-
-        <section class="main-catalog">
-          <div class="sort-catalog-main">
-            <div class="form-sort">Сортировать:</div>
-
-            <ul class="catalog-sort-ul clearfix">
-              <li class="catalog-sorts">
-                <a href="#" class="catalog-sorts">по цене</a>
-              </li>
-              <li class="catalog-sorts">
-                <a href="#" class="transporent">по типу</a>
-              </li>
-              <li class="catalog-sorts">
-                <a href="#" class="transporent">по названию</a>
-              </li>
-              <li class="catalog-sorts">
-                <a href="#">▼</a>
-                <a href="#">▲</a>
-              </li>
-            </ul>
-
-          </div>
-
-          <div class="catalog-list">
-
-            <div class="catalog-item">
-              <img src="img/sedona.jpg" alt="sedona" width="360" height="576">
-              <div class="goods-hover">
-                <h2>Sedona</h2>
-                <p>Информационный сайт для туристов</p>
-                <a href="">9900 РУБ.</a>
-              </div>
-            </div>
-
-            <div class="catalog-item">
-              <img src="img/pink.jpg" alt="pink" width="360" height="576">
-              <div class="goods-hover">
-                <h2>Pink app</h2>
-                <p>Продуктовый лендинг приложения для IOS и Android</p>
-                <a href="">9900 РУБ.</a>
-              </div>
-            </div>
-
-            <div class="catalog-item">
-              <img src="img/barbershop.jpg" alt="barbershop" width="360" height="576">
-              <div class="goods-hover">
-                <h2>Barbershop</h2>
-                <p>Сайт салоны красоты. Для мужчин, да.</p>
-                <a href="">9900 РУБ.</a>
-              </div>
-            </div>
-
-            <div class="catalog-item">
-              <img src="img/mishka.jpg" alt="mishka" width="360" height="576">
-              <div class="goods-hover">
-                <h2>Mishka</h2>
-                <p>Интернет-магазин вязаных игрушек</p>
-                <a href="">9900 РУБ.</a>
-              </div>
-            </div>
-
-            <div class="catalog-item">
-              <img src="img/aplus.jpg" alt="alpus" width="360" height="576">
-              <div class="goods-hover">
-                <h2>A Plus</h2>
-                <p>Лэндинг курсов повышения квалификации</p>
-                <a href="">9900 РУБ.</a>
-              </div>
-            </div>
-
-            <div class="catalog-item">
-              <img src="img/kvast.jpg" alt="kvast" width="360" height="576">
-              <div class="goods-hover">
-                <h2>Кваст</h2>
-                <p>Промо-сайт производителя крафтового кваса</p>
-                <a href="">9900 РУБ.</a>
-              </div>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
             </div>
           </div>
 
-          <div class="page">
-            <ul class="page-catalog">
-              <li class="paginator">
-                <a>1</a>
-              </li>
-              <li class="paginator">
-                <a href="#">2</a>
-              </li>
-              <li class="paginator">
-                <a href="#">3</a>
-              </li>
-              <li class="paginator">
-                <a href="#">следующая</a>
-              </li>
-            </ul>
+
+          <div class="form-heading">Сетка:</div>
+
+          <div class="form-block">
+            <input checked type="radio" name="view" value="Адаптивная" id="rad">
+            <label for="rad">Адаптивная</label>
+
+            <input type="radio" name="view" value="Фиксированная" id="rad1">
+            <label for="rad1">Фиксированная</label>
+
+            <input type="radio" name="view" value="Резиновая" id="rad2">
+            <label for="rad2">Резиновая</label>
           </div>
-        </section>
-      </div>
+
+
+          <div class="form-heading">Особенности:</div>
+
+          <div class="form-block">
+            <input type="checkbox" id="ch1" checked>
+            <label for="ch1">Слайдер</label>
+            <input type="checkbox" id="ch2">
+            <label for="ch2">Блок преимуществ</label>
+            <input checked type="checkbox" id="ch3">
+            <label for="ch3">Новости</label>
+            <input type="checkbox" id="ch4">
+            <label for="ch4">Галерея</label>
+            <input type="checkbox" id="ch5">
+            <label for="ch5">Корзина</label>
+          </div>
+
+          <a href="#" class="show-aside">Показать</a>
+        </form>
+      </aside>
+
+      <section class="main-catalog">
+        <div class="sort-catalog-main">
+          <div class="form-sort">Сортировать:</div>
+
+          <ul class="catalog-sort-ul clearfix">
+            <li class="catalog-sorts">
+              <a href="#" class="catalog-sorts">по цене</a>
+            </li>
+            <li class="catalog-sorts">
+              <a href="#" class="transporent">по типу</a>
+            </li>
+            <li class="catalog-sorts">
+              <a href="#" class="transporent">по названию</a>
+            </li>
+            <li class="catalog-sorts">
+              <a href="#" class="catalog-sorts-arrows">▼</a>
+              <a href="#" class="catalog-sorts-arrows">▲</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="catalog-list">
+
+          <div class="catalog-item">
+            <img src="img/sedona.jpg" alt="sedona" width="360" height="576">
+            <div class="goods-hover">
+              <h2 class="head-hover">Sedona</h2>
+              <p class="paragraph-hover">Информационный сайт <br>для туристов</p>
+              <a href="" class="link-hover">9900 РУБ.</a>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="img/pink.jpg" alt="pink" width="360" height="576">
+            <div class="goods-hover">
+              <h2 class="head-hover">Pink app</h2>
+              <p class="paragraph-hover">Продуктовый лендинг приложения для IOS и Android</p>
+              <a href="" class="link-hover">9900 РУБ.</a>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="img/barbershop.jpg" alt="barbershop" width="360" height="576">
+            <div class="goods-hover">
+              <h2 class="head-hover">Barbershop</h2>
+              <p class="paragraph-hover">Сайт салоны красоты. Для мужчин, да.</p>
+              <a href="" class="link-hover">9900 РУБ.</a>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="img/mishka.jpg" alt="mishka" width="360" height="576">
+            <div class="goods-hover">
+              <h2 class="head-hover">Mishka</h2>
+              <p class="paragraph-hover">Интернет-магазин вязаных игрушек</p>
+              <a href="" class="link-hover">9900 РУБ.</a>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="img/aplus.jpg" alt="alpus" width="360" height="576">
+            <div class="goods-hover">
+              <h2 class="head-hover">A Plus</h2>
+              <p class="paragraph-hover">Лэндинг курсов повышения квалификации</p>
+              <a href="" class="link-hover">9900 РУБ.</a>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="img/kvast.jpg" alt="kvast" width="360" height="576">
+            <div class="goods-hover">
+              <h2 class="head-hover">Кваст</h2>
+              <p class="paragraph-hover">Промо-сайт производителя крафтового кваса</p>
+              <a href="" class="link-hover">9900 РУБ.</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="page">
+          <ul class="page-catalog">
+            <li class="paginator">
+              <a>1</a>
+            </li>
+            <li class="paginator">
+              <a href="#" class="page-number">2</a>
+            </li>
+            <li class="paginator">
+              <a href="#" class="page-number">3</a>
+            </li>
+            <li class="paginator">
+              <a href="#" class="page-number">следующая</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </main>
-  </section>
+
   <!--Пятый блок-->
+
 
   <section class="map">
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=uupC6ytt-YlZ55ZPd0c9Wkb6sDiKhY8X&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
     <div class="adress">
       <h3 class="adress-logo">nёrds design studio</h3>
-      <p class="adress-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д.19/8</p>
+      <p class="adress-text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
       <p class="adress-phone">тел. +7 (812) 275-75-75</p>
       <a href="#" class="map-button">Напишите нам</a>
     </div>
@@ -214,28 +214,29 @@
   </section>
 
   <!--Шестой блок-->
+  <section class="container-footer">
+    <footer class="page-footer">
+      <ul class="footersocial">
+        <li class="social-link">
+          <a href="https://vk.com/" class="social-links link--vk">Мы в вк</a>
+        </li>
 
-  <footer class="page-footer">
-    <ul class="footersocial">
-      <li class="social-links link--vk">
-        <a href="https://vk.com/" class="social-link">Мы в ВК</a>
-      </li>
+        <li class="social-link">
+          <a href="https://www.facebook.com/" class="social-links link--fb">Мы в Фэйсбук</a>
+        </li>
 
-      <li class="social-links link--fb">
-        <a href="https://www.facebook.com/" class="social-link">Мы в Фэйсбук</a>
-      </li>
+        <li class="social-link">
+          <a href="https://www.instagram.com/" class="social-links link--inst">Мы в Инстаграм</a>
+        </li>
+      </ul>
 
-      <li class="social-links link--inst">
-        <a href="https://www.instagram.com/" class="social-link">Мы в Инстаграм</a>
-      </li>
-    </ul>
+      <div class="footertext">
+        <h3 class="lets-friend">Давайте дружить, это выгодно!</h3>
+        <p class="ten-percent">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
 
-    <div class="footertext">
-      <h3 class="lets-friend">Давайте дружить, это выгодно!</h3>
-      <p class="ten-percent">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-
-  </footer>
+    </footer>
+  </section>
 </body>
 
 </html>

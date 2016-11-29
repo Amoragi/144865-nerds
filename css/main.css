@@ -1,13 +1,16 @@
 body {
-  font-family: Roboto, arial, helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
 header {
   background-color: #eeeeee;
   min-width: 1160px;
+  margin-bottom: 0px;
 }
-
+a {
+  text-decoration: none;
+}
 .container {
   position: relative;
   width: 1160px;
@@ -15,7 +18,7 @@ header {
   /*background-color: red;*/
 }
 .topline {
-  padding-top: 50px;
+  padding-top: 51px;
 }
 .clearfix::after {
   content: "";
@@ -93,8 +96,8 @@ header {
 }
 .slider-controls i{
   display:inline-block;
-  width:15px;
-  height:15px;
+  width:13px;
+  height:13px;
   margin:0 3px;
   background:white;
   border:3px solid white;
@@ -103,18 +106,44 @@ header {
   cursor:pointer;
   margin-right: 7px;
 }
-.slider-controls .active{
-  background:lightgray;
-  border: 3px solid white;
-}
 
+.slider-controls .active::after {
+  content:"";
+  background-color: white;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: 8px;
+  top: 5px;
+}
 
 
 .slide-long-expensive {
   background-color: #eeeeee;
   background-image: url(../img/slider-1.jpg);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right -9px;
+  padding-bottom: 79px;
+  /* margin: 0 auto; */
+}
+.slide-math {
+  display: none;
+  background-color: #eeeeee;
+  background-image: url(../img/slider-2.jpg);
+  background-repeat: no-repeat;
+  background-position: right -9px;
+  padding-bottom: 79px;
+  /* margin: 0 auto; */
+}
+.slide-hardkor {
+  display: none;
+  background-color: #eeeeee;
+  background-image: url(../img/slider-3.jpg);
+  background-repeat: no-repeat;
+  background-position: right -9px;
   padding-bottom: 79px;
   /* margin: 0 auto; */
 }
@@ -127,18 +156,18 @@ header {
   left: 535px;
 }
 .slide-p {
-  line-height: 26px;
+  line-height: 24px;
   margin-bottom: 38px;
   vertical-align: top;
 }
 .slide-button {
   display: inline-block;
   background-color: #fb565a;
-  border-radius: 5px;
+  border-radius: 2px;
   color: white;
   text-transform: uppercase;
   text-align: center;
-  padding: 16px 10px 15px;
+  padding: 18px 10px 15px;
   min-width: 220px;
   text-decoration: none;
 }
@@ -180,7 +209,7 @@ header {
 .services {
   width: 1160px;
   margin: 0 auto;
-  padding-bottom: 56px;
+  padding-bottom: 54px;
   border-bottom: 2px solid lightgray;
   padding-top: 82px;
   /*background-color: pink;*/
@@ -198,7 +227,7 @@ header {
 .services-heading {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 27px;
+  margin-top: 25px;
   margin-bottom: 18px;
 }
 .services-item--yellow {
@@ -212,7 +241,7 @@ h2 {
 .services-services-item{
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 }
 .booking {
   width: 160px;
@@ -241,17 +270,17 @@ h2 {
 
 
 /*Третий блок*/
-.description-list{
+.description-list {
   padding-left: 25px;
   margin-top: 9px;
 }
 
-.description{
-  margin-: 0 auto;
+.description {
+  margin: 0 auto;
   background-color: white;
 }
 
-.description-item::before{
+.description-item::before {
   content:"";
   background-color: #fb565a;
   width: 25px;
@@ -382,7 +411,7 @@ sup {
   display: block;
   position: absolute;
   top: 64px;
-  left: 281;
+  left: 279px;
   /*left не работает*/
 }
 
@@ -419,9 +448,9 @@ sup {
   position: relative;
   width: auto;
   min-width: 1160px;
+  min-height: 415px;
   margin-bottom: 20px;
-  /**background-color: red;
-  border: 10px solid black;*/
+  background-image: url ("../img/map-metka.jpg")
 }
 
 
@@ -430,21 +459,22 @@ sup {
   text-align: left;
   position: absolute;
   background-color: white;
-  width: 271px;
-  height: 276px;
+  width: 269px;
+  height: 273px;
   left:50%;
-  top:58px;
+  top:55px;
   transform: translateX(-580px);
-  padding-left: 52px;
+  padding-left: 50px;
 }
 .adress-logo {
   font-size: 18px;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
 .adress-text {
   font-size: 16px;
-  margin-top: 27px;
+  margin-top: 28px;
   margin-bottom: 18px;
 }
 .map-button {
@@ -457,26 +487,140 @@ sup {
   background-color: #fb565a;
   padding: 15px 44px 15px;
   text-decoration: none;
+  position: relative;
 }
-.page-footer {
-  padding-left: 65px;
+
+/*ВСПЛЫВАЮЩАЯ ФОРМА*/
+
+.modal-content {
+  /*display: none;*/
+  position: absolute;
+  width: 960px;
+  height: 590px;
+  bottom: 17%;
+  left: 580px;
+  background-color: white;
+  box-shadow: 5px 5px 50px gray;
 }
-.adress-phone {
-  margin-bottom: 40px;
+/*КНОПКА*/
+.modal-content-close {
+  position: absolute;
+  top: 76px;
+  right: 105px;
+  background-color: white;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
 }
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 27px;
+  height: 5px;
+  background-color: pink;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+/*Кнопка закончилась*/
+
+
+.head-back-paragraf {
+  display: inline-block;
+  font-size: 45px;
+  font-weight: 500;
+  padding-bottom: 36px;
+  padding-top: 0px;
+  margin-top: 64px;
+  margin-bottom: 0;
+}
+.form-top {
+  margin-bottom: 34px;
+}
+
+.form-name {
+  float: left;
+  margin-right: 36px;
+}
+
+.form-text-input {
+  padding: 12px 556px 86px 13px;
+  color: gray;
+  border: lightgray 1px solid;
+  border-radius: 2px;
+}
+.form-input {
+  background-color: white;
+  border: 1px lightgray solid;
+  color: gray;
+  padding: 15px 117px 15px 15px;
+  width: 230px;
+  border-radius: 2px;
+}
+
+
+.heading-paragraf {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0;
+  display: block;
+}
+.form-link {
+  background-color: #fb565a;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 16px 84px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.main-form-block {
+  width: 780px;
+  margin: 0 98px;
+}
+
+.form-back-text {
+  padding-bottom: 48px;
+}
+
+
 /*Шестой блок*/
-footer{
+.container-footer {
+  width: 1160px;
   margin: 0 auto;
 }
 
-.footersocial{
+.adress-phone {
+  margin-bottom: 38px;
+}
+
+.footersocial {
   display: inline-block;
   width: 300px;
-  margin-top: 53px;
-  font-size: 0;
+  margin-top: 38px;
   vertical-align: top;
   padding-left: 0px;
   /*background-color: red;*/
+}
+
+.social-link {
+  display: inline-block;
+  font-size: 0;
 }
 .social-links {
   display: inline-block;
@@ -484,10 +628,11 @@ footer{
   width: 78px;
   height: 78px;
   border-radius: 100px;
-  margin-right: 14px;
+  margin-right: 9px;
   vertical-align: top;
   background-repeat: no-repeat;
 }
+
 .link--vk {
   background-image: url(../sprite/social.png);
   background-position: 2px 2px;
@@ -509,12 +654,13 @@ footer{
   display: block;
   margin-bottom: 10px;
   margin-top: 0px;
+  /*background-color: red;*/
 }
 .footertext{
   display: inline-block;
   width:700px;
   /*background-color: green;*/
-  margin-left: 98px;
+  margin-left: 96px;
   font-weight: bold;
   padding-bottom: 20px;
 }
@@ -525,10 +671,6 @@ footer{
   padding: 0;
 }
 
-/*#vk{height:28px;width:28px;}
-#vk{background:url('img/sprite.png') -63px 10px;}
-
-Красный - *#fb565a/
 
 /*ВТОРАЯ СТРАНИЦА*/
 
@@ -543,8 +685,8 @@ margin-top: 85px;
   font-size: 55px;
   text-align: center;
   margin-top: 65px;
-  margin-bottom: 60px;
-  padding-bottom: 107px;
+  margin-bottom: 0px;
+  padding-bottom: 104px;
   /*background-color: pink;*/
 }
 .container {
@@ -553,26 +695,22 @@ margin-top: 85px;
   /*background-color: orange;*/
 }
 
-
-
-.main-bloks {
-  /*outline: 10px solid black;**/
-  width: 1160px;
-  margin: 0 auto;
+.page-header--inner {
+  margin-bottom: 57px;
 }
-
 .container-catalog {
   width: 1160;
   margin: 0 auto;
   /*background-color: red;*/
 }
 aside {
-  display: inline-block;
+  float: left;
   width: 260px;
   /*background-color: pink;*/
   font-size: 0;
   vertical-align: top;
   margin-right: 137px;
+  padding-top: 2px;
 }
 
 .form-block-head {
@@ -583,10 +721,10 @@ aside {
   /*background-color: green;*/
 }
 .form-block {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   font-size: 16px;
   text-transform: none;
-  margin-top: -17px;
+  margin-top: -18px;
   /*background-color: green;*/
 }
 .form-aside {
@@ -603,7 +741,7 @@ aside {
   font-weight: 900;
   text-transform: uppercase;
   margin-right: 271px;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
   /*background-color: yellow;*/
 }
 .range-filter {
@@ -625,9 +763,10 @@ aside {
   background: #d7dcde;
 }
 .range-controls .bar {
-  width: 70%;
+  width: 50%;
   height: 2px;
   background: #00ca74;
+  margin-left: 9%;
 }
 .range-controls .toggle {
   position: absolute;
@@ -650,6 +789,7 @@ aside {
 }
 .price-controls {
   font-size: 0;
+  margin-bottom: 58px;
 }
 .price-controls label {
   font-size: 16px;
@@ -660,7 +800,6 @@ aside {
   text-align: right;
 }
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   width: 60px;
   margin-left: 8px;
@@ -671,42 +810,73 @@ aside {
   border-radius: 5px;
   background: #f1f1f1;
 }
-/*.sort-img {
-padding-bottom: 12px;
-padding-top: 30px;
-}*/
+
 
 .catalog-item {
   background: url("../img/browser.png");
   background-repeat: no-repeat;
-  background-position: 50% 50%
-  width: 100%;
   border-top: none;
   padding-top: 40px;
   display: inline-block;
-  margin-bottom: 0px;
-  margin-top: 13px;
+  margin-bottom: 35px;
+  position: relative;
   /*outline: 10px solid pink;*/
 }
 
 .catalog-item:nth-child(odd) {
   margin-right: 40px;
-  margin-top: 13px;
+}
+
+.goods-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #eeeeee;
+  width: calc(100% - 40px);
+  padding: 20px;
+  display: none;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 60px;
+  }
+.head-hover {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.paragraph-hover {
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.link-hover {
+  background-color: #fb565a;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 25px 100px;
+  padding: 14px 64px;
+}
+.catalog-item:hover {
+  box-shadow: 0 1px 25px 1px lightgray;
+}
+
+.catalog-item:hover .goods-hover {
+display: block;
 }
 
 .main-catalog{
-  display: inline-block;
+  float: right;
   font-size: 0;
   /*background-color: green;*/
-  width: 751px;
-  margin-top: -4px;
+  width: 760px;
 }
 .sort-catalog-main {
   /*background-color: orange;*/
   font-size: 0px;
-  margin-bottom: 62px;
-  width: 760px;
-  margin-left: 9px;
+  margin-bottom: 76px;
 
 }
 .form-sort {
@@ -714,38 +884,43 @@ padding-top: 30px;
   text-transform: uppercase;
   font-weight: bold;
   float: left;
-  margin-left: -10px;
-
+  line-height: 18px;
 }
+
+.catalog-sorts-arrows {
+  color: black;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.catalog-sorts-arrows:first-child {
+  margin-right: 5px;
+}
+
 .catalog-sort-ul {
   float: right;
   /*background-color: green;*/
-  width: 350;
   text-align: right;
   padding-left: 0;
-  margin-right: 11px;
+  margin-right: 1px;
   margin-top: 3px;
 }
 
-.clearfix::after {
-  content: "";
-  display:block;
-  clear: both;
-}
-a {
-  text-decoration: none;
-}
 .catalog-sorts {
   display: inline-block;
-  margin-right: 36px;
+  margin-right: 35px;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
 }
 
+.catalog-sorts:nth-last-child(2) {
+  margin-right: 48px;
+  /*background-color: pink;*/
+}
 .catalog-sorts:last-child {
-  margin-right: 0;
+  margin-right: 0px;
   /*background-color: pink;*/
 }
 
@@ -891,8 +1066,8 @@ input[type="checkbox"]:checked + label::before {
 .page-catalog {
   padding-left: 0;
   font-size: 14px;
-  margin-top: 29px;
-      margin-bottom: 61px;
+  margin-top: 24px;
+  margin-bottom: 58px;
 }
 
 .paginator {
@@ -909,7 +1084,9 @@ input[type="checkbox"]:checked + label::before {
   padding: 13px 16px;
   list-style: none;
 }
-
+.page-number {
+  color: black;
+}
 .paginator:first-child {
   background-color: white;
   border: lightgray solid 4px;
@@ -935,6 +1112,9 @@ h3 {
   font-size: 36px;
   margin-bottom: 0;
 }
+.container-footer {
+  /*background-color: green;*/
+}
 
 .footers {
   margin-bottom: 12px;
@@ -945,16 +1125,10 @@ h3 {
   margin-top:45px;
   display: inline-block;
 }
-.social-link {
-  posi
-}
+
 .footertext-catalog {
   display: inline-block;
   margin-left: 118px;
   vertical-align: top;
   margin-top: 10px;
-}
-
-#ten-percent-catalog {
-  margin-top: 8px;
 }
